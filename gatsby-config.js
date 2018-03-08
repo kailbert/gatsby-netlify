@@ -3,7 +3,6 @@ module.exports = {
     title: 'Pete Schilling',
     desc: 'Director and cool guy',
   },
-  pathPrefix: "/gatsby",
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-stylus',
