@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import ProjectListing from '../components/Projects/ProjectListing.js'
+import HorizontalScroll from 'react-scroll-horizontal'
 
 
 export default class ProjectsList extends Component {
   render() {
     const {data} = this.props;
     return (
-      <div className="projectslist"> 
-        {data.allMarkdownRemark.edges.map(({node}) => {
-            return <ProjectListing post={node} key={node.id} />
-         })}
+      <div className="projectslist">
+          <HorizontalScroll>
+            {data.allMarkdownRemark.edges.map(({node}) => {
+              return <ProjectListing post={node} key={node.id} />
+            })}
+          </HorizontalScroll>
       </div>
     )
   }
