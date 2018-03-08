@@ -6,7 +6,7 @@ export default class ProjectPage extends Component {
     return (
       <div>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <span>{data.markdownRemark.frontmatter.date}</span>
+        <h1>{data.markdownRemark.frontmatter.videoid}</h1>
         <div dangerouslySetInnerHTML={{
             __html: data.markdownRemark.html
         }} />
@@ -22,6 +22,7 @@ query BlogPostQuery($slug: String!){
         frontmatter{
             title
             date(formatString: "DD.MM.YYYY")
+            videoid
         }
       }
 }
