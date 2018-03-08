@@ -5,19 +5,25 @@ export default class ProjectPage extends Component {
       const { data } = this.props;
       const iframeSrc = `https://player.vimeo.com/video/${data.markdownRemark.frontmatter.videoid}?autoplay=1&color=fff&title=0&byline=0&portrait=0`
     return (
-      <div>
-        <div className="video-embed">
-          <iframe 
-          src= {iframeSrc}
-          frameborder="0" 
-          allowfullscreen>
-          </iframe>
+      <div className="project">
+        <div className="project-left">
+          <h2>{data.markdownRemark.frontmatter.title}</h2>
         </div>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <h1>{data.markdownRemark.frontmatter.videoid}</h1>
-        <div dangerouslySetInnerHTML={{
-            __html: data.markdownRemark.html
-        }} />
+        <div className="project-main">
+          <div className="video-embed">
+            <iframe 
+            src= {iframeSrc}
+            frameborder="0" 
+            allowfullscreen>
+            </iframe>
+          </div>
+          <div dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html
+          }} />
+        </div>
+        <div className="project-right">
+          <a href="">Next</a>
+        </div>
       </div>
     )
   }

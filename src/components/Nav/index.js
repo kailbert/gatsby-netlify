@@ -16,7 +16,7 @@ export default class Nav extends Component {
               <Link to="/projects" activeClassName="active">Projects</Link>
             </li>
             <li>
-              <Link to="/information" activeClassName="active">Information</Link>
+              <Link to="/about" activeClassName="active">Information</Link>
             </li>
             <li>
               <Link to="/contact" activeClassName="active">Contact</Link>

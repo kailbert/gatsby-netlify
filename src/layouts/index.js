@@ -8,6 +8,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 
+import "./styles/globalStyles";
 import './reset.css'
 import './main.styl'
 
@@ -47,7 +48,7 @@ const TemplateWrapper = ({ children, data, location }) => (
         <TransitionHandler
             location={location}
         >
-    <div>
+    <div className="mainwrapper">
       {children()}
     </div>
     </TransitionHandler>

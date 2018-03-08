@@ -1,58 +1,75 @@
-// // Assetpath relativ
-// $assetspath = "../../assets"
+// Assetpath relativ
+$assetspath = "../../assets"
 
-// // Colors
-// my-colors = {
-// 	black: #151C22
-// 	white: #ffffff
-// 	bg: #fcfcfc
-// 	text: #666C71
-// }
-// for name, color in my-colors
-// 	define('$'+name color)
+// Colors
+my-colors = {
+	black: #151C22
+	white: #ffffff
+	bg: #fcfcfc
+	text: #666C71
+}
+for name, color in my-colors
+	define('$'+name color)
 
-// //Animation
-// $animation-timing = .5s
-// $animation-curve = cubic-bezier(0.4, 0, 0.2, 1)
-// ease = $animation-curve
+//Animation
+$animation-timing = .5s
+$animation-curve = cubic-bezier(0.4, 0, 0.2, 1)
+ease = $animation-curve
 
-// animationbooster()
-// 	transform: translateZ(0)
-// 	perspective: 1000
-// 	backface-visibility: hidden
-// 	// will-change transform //CHROME Bug
+animationbooster()
+	transform: translateZ(0)
+	perspective: 1000
+	backface-visibility: hidden
+	// will-change transform //CHROME Bug
 
-// // BREAKPOINTS ⚡
-// $bp1=769px
-// $bp2=1280px
-// bp(var)
-// 	@media screen and (max-width:var)
-// 		{block}
-// section()
-// 	max-width 1440px
-// 	margin 0 auto
-// 	padding 2rem
-// my-shadow()
-// 	box-shadow 0 5px 30px -10px rgba(black,.15)
-// my-shadow-hover()
-// 	box-shadow 0 30px 25px -15px rgba($blue,.2), 0 15px 40px -10px rgba(black,.2)
-// loop()
-// 	for i in (1..10)
-// 		&:nth-child({i})
-// 			animation-delay (166ms * i)
+// BREAKPOINTS ⚡
+$bp1=769px
+$bp2=1280px
+bp(var)
+	@media screen and (max-width:var)
+		{block}
+section()
+	max-width 1440px
+	margin 0 auto
+	padding 2rem
+my-shadow()
+	box-shadow 0 5px 30px -10px rgba(black,.15)
+my-shadow-hover()
+	box-shadow 0 30px 25px -15px rgba($blue,.2), 0 15px 40px -10px rgba(black,.2)
+loop()
+	for i in (1..10)
+		&:nth-child({i})
+			animation-delay (166ms * i)
 
 $black = #000
 $white = #fff
 
+bold()
+	font-family 'AkkuratBold'
+	font-weight normal
+
+regular()
+	font-family 'AkkuratRegular'
+	font-weight normal
+body
+	regular()
 a
-    color $black
-    text-decoration none
+	color $black
+	text-decoration none
 ul
-    li
-        list-style-type none
-
-
-// BASIC FLEXBOX GRID 
+	li
+		list-style-type none
+dl
+	dd
+		text-indent 40px
+blockquote
+	text-indent 40px
+.mainwrapper
+	padding 2rem
+.main
+	max-width 720px
+	margin 0 auto
+	width 100%
 .container
 	margin 0 auto
 	max-width 1260px
@@ -113,11 +130,64 @@ ul
 				img
 					filter blur(10px)
 					
+.about
+	display grid
+	grid-template-areas "intro intro intro a a a"\
+						"b b clients clients c c"\
+						"d d d d contact contact"\
+						"address address e e e e"\
+						"f f image image g g"\
+						"h h h h imprint imprint"
+	*
+		border 1px solid red
+	.about-intro
+		grid-area intro
+	.about-clients
+		grid-area clients
+	.about-address
+		grid-area address
+	.about-contact
+		grid-area contact
+	.about-image
+		grid-area image
+	.about-imprint
+		grid-area imprint
 
+.project
+	display grid
+	grid-template-columns 1fr 2fr 1fr
+	grid-template-areas "left main right"
+	.project-left
+		grid-area left
+	.project-main
+		grid-area main
+	.project-right
+		grid-area right
+.project-main
+	p
+		text-indent 30%
+		margin-top 60px
+	pre code
+		regular()
+
+
+.video-embed
+	position relative
+	padding-bottom 56.25%
+	margin-bottom 4rem
+	iframe
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		border none
+		outline none
 .transition-group
 	position relative 
 .transition-container
 	position absolute
+	width 100%
 
 .fade-enter
 	opacity 0.01
@@ -136,5 +206,3 @@ ul
 	opacity 0.01
 	transform translateY(2rem)
 	transition all 300ms ease-in
-
-
