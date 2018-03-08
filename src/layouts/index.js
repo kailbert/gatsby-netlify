@@ -46,7 +46,6 @@ const TemplateWrapper = ({ children, data, location }) => (
       >
         <TransitionHandler
             location={location}
-
         >
     <div>
       {children()}
