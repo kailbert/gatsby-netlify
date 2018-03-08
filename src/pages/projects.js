@@ -9,7 +9,9 @@ export default class ProjectsList extends Component {
     const {data} = this.props;
     return (
       <div className="projectslist">
-          <HorizontalScroll>
+          <HorizontalScroll
+            reverseScroll = {true}
+          >
             {data.allMarkdownRemark.edges.map(({node}) => {
               return <ProjectListing post={node} key={node.id} />
             })}

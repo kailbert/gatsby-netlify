@@ -88,13 +88,31 @@ ul
 	display flex
 	width 100vw
 	height 100vw
+	margin 4px
 	article 
 		width 400px
 		margin-right 4px
-		img
-			display block
-			max-width 100%
-			width 100%
+		&:nth-child(2n)
+			margin-top 8rem
+		h3
+			margin-top 4rem
+			transition margin-top 300ms ease
+		.article-image
+			overflow hidden
+			img
+				display block
+				max-width 100%
+				width 100%
+				filter blur(0px)
+				transition filter 300ms ease
+				transform scale(1.1)
+		&:hover
+			h3
+				margin-top 1.6rem
+			.article-image
+				img
+					filter blur(10px)
+					
 
 .transition-group
 	position relative 
@@ -103,16 +121,20 @@ ul
 
 .fade-enter
 	opacity 0.01
+	transform translateY(2rem)
 
 .fade-enter.fade-enter-active
 	opacity 1
-	transition opacity 2s ease-in
+	transform translateY(0rem)
+	transition all 300ms ease-in
 
 .fade-exit 
 	opacity 1
+	transform translateY(0rem)
 
 .fade-exit.fade-exit-active
 	opacity 0.01
-	transition opacity 2s ease-in
+	transform translateY(2rem)
+	transition all 300ms ease-in
 
 
