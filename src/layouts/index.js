@@ -2,12 +2,32 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import withRouter from 'react-router-dom/withRouter'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+
 import Header from '../components/Header'
+import Nav from '../components/Nav'
+
 import './reset.css'
 import './main.styl'
 
 
-const TemplateWrapper = ({ children,data, location }) => (
+class TransitionHandler extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.location.pathname === window.location.pathname;
+  }
+
+  render() {
+    const {children} = this.props;
+    return (
+      <div className="transition-container">
+        {children}
+      </div>
+    );
+  }
+}
+
+const TemplateWrapper = ({ children, data, location }) => (
   <div>
     <Helmet
       title="Gatsby Default Starter"
@@ -17,9 +37,23 @@ const TemplateWrapper = ({ children,data, location }) => (
       ]}
     />
     <Header data={data} location={location}/>
+    <Nav/>
+    <TransitionGroup>
+      <CSSTransition
+          key={location.pathname}
+          classNames="fade"
+          timeout={{ enter: 2000, exit: 2000 }}
+      >
+        <TransitionHandler
+            location={location}
+
+        >
     <div>
       {children()}
     </div>
+    </TransitionHandler>
+      </CSSTransition>
+    </TransitionGroup>
   </div>
 )
 

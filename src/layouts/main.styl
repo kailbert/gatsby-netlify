@@ -1,3 +1,46 @@
+// // Assetpath relativ
+// $assetspath = "../../assets"
+
+// // Colors
+// my-colors = {
+// 	black: #151C22
+// 	white: #ffffff
+// 	bg: #fcfcfc
+// 	text: #666C71
+// }
+// for name, color in my-colors
+// 	define('$'+name color)
+
+// //Animation
+// $animation-timing = .5s
+// $animation-curve = cubic-bezier(0.4, 0, 0.2, 1)
+// ease = $animation-curve
+
+// animationbooster()
+// 	transform: translateZ(0)
+// 	perspective: 1000
+// 	backface-visibility: hidden
+// 	// will-change transform //CHROME Bug
+
+// // BREAKPOINTS ⚡
+// $bp1=769px
+// $bp2=1280px
+// bp(var)
+// 	@media screen and (max-width:var)
+// 		{block}
+// section()
+// 	max-width 1440px
+// 	margin 0 auto
+// 	padding 2rem
+// my-shadow()
+// 	box-shadow 0 5px 30px -10px rgba(black,.15)
+// my-shadow-hover()
+// 	box-shadow 0 30px 25px -15px rgba($blue,.2), 0 15px 40px -10px rgba(black,.2)
+// loop()
+// 	for i in (1..10)
+// 		&:nth-child({i})
+// 			animation-delay (166ms * i)
+
 $black = #000
 $white = #fff
 
@@ -31,4 +74,38 @@ ul
 	display inline-block
 	width 24px
 	height 24px
-	
+.intro
+	width 100%
+	height 100vh
+	display flex
+	justify-content center
+	align-items center
+	z-index 1
+	position relative
+	h1
+		font-size 16vw
+.projectslist
+	display grid
+	grid-template-columns repeat(4,1fr)
+	grid-gap .4rem
+
+.transition-group
+	position relative 
+.transition-container
+	position absolute
+
+.fade-enter
+	opacity 0.01
+
+.fade-enter.fade-enter-active
+	opacity 1
+	transition opacity 2s ease-in
+
+.fade-exit 
+	opacity 1
+
+.fade-exit.fade-exit-active
+	opacity 0.01
+	transition opacity 2s ease-in
+
+

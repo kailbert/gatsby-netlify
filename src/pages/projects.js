@@ -7,10 +7,7 @@ export default class ProjectsList extends Component {
   render() {
     const {data} = this.props;
     return (
-      <div>
-        {/* <p>Welcome to {data.site.siteMetadata.title}</p>
-        <Img sizes={data.background.sizes}/>
-        <p>Now go build {data.site.siteMetadata.desc}</p> */}
+      <div className="projectslist"> 
         {data.allMarkdownRemark.edges.map(({node}) => {
             return <ProjectListing post={node} key={node.id} />
          })}
@@ -42,6 +39,8 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString:"DD.MM.YYYY")
+            image
+            videoid
           }
           html
           excerpt

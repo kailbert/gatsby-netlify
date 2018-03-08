@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "animejs": "^2.2.0",
     "gatsby": "^1.9.223",
     "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.38",
@@ -15,6 +16,7 @@
     "gatsby-transformer-remark": "^1.7.36",
     "gatsby-transformer-sharp": "^1.6.22",
     "react-helmet": "^5.2.0",
+    "react-transition-group": "^2.2.1",
     "styled-components": "^3.2.1"
   },
   "keywords": [
