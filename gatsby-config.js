@@ -22,13 +22,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
-      options:{
-        name: 'src',
-        path: `${__dirname}/static/assets`
-      }
-    },
-    {
       resolve: 'gatsby-transformer-remark',
       options:{
        excerpt_separator: `<!-- End -->`
