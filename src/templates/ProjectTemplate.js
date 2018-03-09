@@ -7,7 +7,10 @@ export default class ProjectPage extends Component {
     return (
       <div className="project">
         <div className="project-left">
-          <h2>{data.markdownRemark.frontmatter.title}</h2>
+          <div className="project-title">
+            <h3>{data.markdownRemark.frontmatter.title}</h3>
+            <h3>with {data.markdownRemark.frontmatter.client}</h3>
+          </div>
         </div>
         <div className="project-main">
           <div className="video-embed">
@@ -37,6 +40,7 @@ query BlogPostQuery($slug: String!){
             title
             date(formatString: "DD.MM.YYYY")
             videoid
+            client
         }
       }
 }

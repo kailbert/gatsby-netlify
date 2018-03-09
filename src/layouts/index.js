@@ -5,19 +5,16 @@ import Helmet from 'react-helmet'
 import withRouter from 'react-router-dom/withRouter'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
-// import Header from '../components/Header'
 import Nav from '../components/Nav'
 
+import './styles/reset.css'
 import "./styles/globalStyles";
-import './reset.css'
-import './main.styl'
-
+import './styles/main.styl'
 
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return this.props.location.pathname === window.location.pathname;
   }
-
   render() {
     const {children} = this.props;
     return (
@@ -42,16 +39,16 @@ const TemplateWrapper = ({ children, data, location }) => (
     <TransitionGroup>
       <CSSTransition
           key={location.pathname}
-          classNames="fade"
-          timeout={{ enter: 600, exit: 600 }}
+          classNames="pagetransition"
+          timeout={{ enter: 1200, exit: 1200 }}
       >
         <TransitionHandler
             location={location}
         >
-    <div className="mainwrapper">
-      {children()}
-    </div>
-    </TransitionHandler>
+          <div className="mainwrapper">
+            {children()}
+          </div>
+        </TransitionHandler>
       </CSSTransition>
     </TransitionGroup>
   </div>

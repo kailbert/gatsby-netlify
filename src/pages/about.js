@@ -17,7 +17,9 @@ export default class AboutPage extends Component {
         <div className="about-clients">
           <TextDisplace text={lorem}></TextDisplace>
         </div>
-        <p className="about-address">{lorem}</p>
+        <p className="about-address">
+          <TextDisplace text={lorem}></TextDisplace>
+        </p>
         <p className="about-contact">{lorem}</p>
         <div className="about-image">
           <Img sizes={data.background.sizes} />

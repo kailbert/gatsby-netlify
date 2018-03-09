@@ -105,19 +105,11 @@ blockquote
 	position relative
 	height 100vw
 	max-height 100vh
-	.thumbs
-		position absolute
-		top 0
-		left 0
-		height 100%
-		width auto
-		overflow hidden 
-		white-space nowrap
-		display flex
+	margin-top 2rem
 	article 
 		width 400px
 		margin-right 4px
-		&:fist-child
+		&:first-child
 			margin-left 2rem
 		&:last-child
 			margin-right 2rem
@@ -132,9 +124,10 @@ blockquote
 				display block
 				max-width 100%
 				width 100%
+				will-change transform
 				filter blur(0px)
 				transition filter 300ms ease
-				transform scale(1.1)
+				transform scale(1.1) translate3d(0,0,0)
 		&:hover
 			h3
 				margin-top 1.6rem
@@ -144,6 +137,7 @@ blockquote
 					
 .about
 	display grid
+	grid-gap 2rem
 	grid-template-areas "intro intro intro a a a"\
 						"b b clients clients c c"\
 						"d d d d contact contact"\
@@ -163,16 +157,13 @@ blockquote
 	.about-imprint
 		grid-area imprint
 
-.textdisplacer
-	span
-		display inline-block
-		will-change transform
-		transform translateY(0)
-		transition all 300ms ease
 .project
 	display grid
-	grid-template-columns 1fr 2fr 1fr
+	grid-gap 2rem
+	grid-template-columns 1fr 3fr 1fr
 	grid-template-areas "left main right"
+	margin-top 12.5vh
+	padding 2rem
 	.project-left
 		grid-area left
 	.project-main
@@ -185,7 +176,9 @@ blockquote
 		margin-top 60px
 	pre code
 		regular()
-
+.project-title
+	h3:last-child
+		text-indent 40px
 
 .video-embed
 	position relative
@@ -199,33 +192,8 @@ blockquote
 		height 100%
 		border none
 		outline none
-.transition-group
-	position relative 
-.transition-container
-	position absolute
-	width 100%
-
-.fade-enter
-	opacity 0.01
-	transform translateY(2rem)
-
-.fade-enter.fade-enter-active
-	opacity 1
-	transform translateY(0rem)
-	transition all 300ms ease-in
-
-.fade-exit 
-	opacity 1
-	transform translateY(0rem)
-
-.fade-exit.fade-exit-active
-	opacity 0.01
-	transform translateY(2rem)
-	transition all 300ms ease-in
 
 
-// random(min,max)
-// 	return floor(math(0, 'random')*(max - min + 1) + min)
 
 .hero
 	width 100%
@@ -250,13 +218,59 @@ blockquote
 		// 	for i in (1..15)
 		// 		&:nth-child({i})
 		// 			transform translateY(2vh * random(0, 22))
-.hero.is-hidden
-	margin-top -100vh
-//     margin-top 0vh
-//     .logo
-//         text-transform uppercase
-//         letter-spacing -.03rem
-//         span
-//             for i in (1..15)
-//                 &:nth-child({i})
-//                     transform translateY(0)
+
+.transition-group
+	position relative 
+.transition-container
+	position absolute
+	width 100%
+	will-change transform
+	translate transform3d(0,0,0)
+
+.pagetransition-enter
+	opacity 0.01
+	transform translateY(50vh)
+
+.pagetransition-enter.pagetransition-enter-active
+	opacity 1
+	transform translateY(0rem)
+	transition all 1200ms ease
+
+.pagetransition-exit 
+	opacity 1
+	transform translateY(0rem)
+
+.pagetransition-exit.pagetransition-exit-active
+	opacity 0.01
+	transform translateY(-50vh)
+	transition all 1200ms ease
+
+
+random(min,max)
+	return floor(math(0, 'random')*(max - min + 1) + min)
+
+heroStartState()
+	opacity 1
+	will-change transform
+	transition all 1200ms ease
+	for i in (1..15)
+		&:nth-child({i})
+			transform translateY(-(random(0, 100)) vh)
+heroEndState()
+	opacity 1
+	transform translateX(0rem)
+.pagetransition-enter
+	.hero .logo span
+		heroStartState()
+
+.pagetransition-enter.pagetransition-enter-active
+	.hero .logo span
+		heroEndState()
+
+.pagetransition-exit 
+	.hero .logo span
+		heroEndState()
+
+.pagetransition-exit.pagetransition-exit-active
+	.hero .logo span
+		heroStartState()

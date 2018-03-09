@@ -10,7 +10,7 @@ export default class Nav extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/#projectslist" activeClassName="active">Projects</Link>
+              <Link to="/projects" activeClassName="active">Projects</Link>
             </li>
             {/* <li>
               <Link to="/projects" activeClassName="active">Projects</Link>
