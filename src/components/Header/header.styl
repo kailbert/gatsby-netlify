@@ -7,14 +7,12 @@ random(min,max)
     display flex
     justify-content center
     align-items center
-    transition all 2s ease
     border 1px solid red
-    margin-top -100vh
     overflow hidden
+    transition all 2s ease
     .logo
         text-transform uppercase
         letter-spacing -.03rem
-        transition all 2s ease
         font-size 12vw
         span
             display inline-block
@@ -22,12 +20,14 @@ random(min,max)
             for i in (1..15)
                 &:nth-child({i})
                     transform translateY(2vh * random(0, 22))
-.hero.is-home
-    margin-top 0vh
-    .logo
-        text-transform uppercase
-        letter-spacing -.03rem
-        span
-            for i in (1..15)
-                &:nth-child({i})
-                    transform translateY(0)
+.hero.is-hidden
+    margin-top -50vh
+// .hero.is-home
+//     margin-top 0vh
+//     .logo
+//         text-transform uppercase
+//         letter-spacing -.03rem
+//         span
+//             for i in (1..15)
+//                 &:nth-child({i})
+//                     transform translateY(0)

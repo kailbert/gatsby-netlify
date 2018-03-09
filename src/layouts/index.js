@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import withRouter from 'react-router-dom/withRouter'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
-import Header from '../components/Header'
+// import Header from '../components/Header'
 import Nav from '../components/Nav'
 
 import "./styles/globalStyles";
@@ -37,7 +37,7 @@ const TemplateWrapper = ({ children, data, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header data={data} location={location}/>
+    {/* <Header data={data} location={location}/> */}
     <Nav/>
     <TransitionGroup>
       <CSSTransition

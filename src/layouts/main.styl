@@ -64,8 +64,6 @@ dl
 		text-indent 40px
 blockquote
 	text-indent 40px
-.mainwrapper
-	padding 2rem
 .main
 	max-width 720px
 	margin 0 auto
@@ -102,13 +100,27 @@ blockquote
 	h1
 		font-size 16vw
 .projectslist
-	display flex
-	width 100vw
+	width 100%
+	overflow hidden
+	position relative
 	height 100vw
-	margin 4px
+	max-height 100vh
+	.thumbs
+		position absolute
+		top 0
+		left 0
+		height 100%
+		width auto
+		overflow hidden 
+		white-space nowrap
+		display flex
 	article 
 		width 400px
 		margin-right 4px
+		&:fist-child
+			margin-left 2rem
+		&:last-child
+			margin-right 2rem
 		&:nth-child(2n)
 			margin-top 8rem
 		h3
@@ -138,8 +150,6 @@ blockquote
 						"address address e e e e"\
 						"f f image image g g"\
 						"h h h h imprint imprint"
-	*
-		border 1px solid red
 	.about-intro
 		grid-area intro
 	.about-clients
@@ -153,6 +163,12 @@ blockquote
 	.about-imprint
 		grid-area imprint
 
+.textdisplacer
+	span
+		display inline-block
+		will-change transform
+		transform translateY(0)
+		transition all 300ms ease
 .project
 	display grid
 	grid-template-columns 1fr 2fr 1fr
@@ -206,3 +222,41 @@ blockquote
 	opacity 0.01
 	transform translateY(2rem)
 	transition all 300ms ease-in
+
+
+// random(min,max)
+// 	return floor(math(0, 'random')*(max - min + 1) + min)
+
+.hero
+	width 100%
+	height 100vh
+	display flex
+	justify-content center
+	align-items center
+	border 1px solid red
+	overflow hidden
+	transition all 2s ease
+	.logo
+		text-transform uppercase
+		letter-spacing -.03rem
+		font-size 12vw
+		position relative
+		span
+			display inline-block
+			margin 0
+			padding 0
+			&:nth-child(5)
+				width 3vw
+		// 	for i in (1..15)
+		// 		&:nth-child({i})
+		// 			transform translateY(2vh * random(0, 22))
+.hero.is-hidden
+	margin-top -100vh
+//     margin-top 0vh
+//     .logo
+//         text-transform uppercase
+//         letter-spacing -.03rem
+//         span
+//             for i in (1..15)
+//                 &:nth-child({i})
+//                     transform translateY(0)

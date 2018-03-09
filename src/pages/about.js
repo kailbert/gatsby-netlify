@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
-
+// import ReactDOM from 'react-dom'
+// import charming from 'charming'
+// import $ from 'jquery'
+import TextDisplace from '../components/TextDisplace'
 
 export default class AboutPage extends Component {
   render() {
@@ -8,8 +11,12 @@ export default class AboutPage extends Component {
     const lorem = "Director based in Düsseldorf. eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no se"
     return (
       <div className="about">
-        <p className="about-intro">{lorem}</p>
-        <p className="about-clients">{lorem}</p>
+        <div className="about-intro">
+          <TextDisplace text="Test text"></TextDisplace>
+        </div>
+        <div className="about-clients">
+          <TextDisplace text={lorem}></TextDisplace>
+        </div>
         <p className="about-address">{lorem}</p>
         <p className="about-contact">{lorem}</p>
         <div className="about-image">
