@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'gatsby-link'
 
 export default class ProjectPage extends Component {
   render() {
@@ -25,7 +26,7 @@ export default class ProjectPage extends Component {
           }} />
         </div>
         <div className="project-right">
-          <a href="">Next</a>
+          <Link to="/projects">Back to Projects</Link>
         </div>
       </div>
     )

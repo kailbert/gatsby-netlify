@@ -137,7 +137,10 @@ blockquote
 					
 .about
 	display grid
+	margin 2rem
 	grid-gap 2rem
+	grid-template-columns repeat(6, 1fr)
+	max-width 1420px
 	grid-template-areas "intro intro intro a a a"\
 						"b b clients clients c c"\
 						"d d d d contact contact"\
@@ -146,6 +149,7 @@ blockquote
 						"h h h h imprint imprint"
 	.about-intro
 		grid-area intro
+		margin-bottom 40px
 	.about-clients
 		grid-area clients
 	.about-address
@@ -154,6 +158,9 @@ blockquote
 		grid-area contact
 	.about-image
 		grid-area image
+		img
+			max-width 75%
+			max-height 75%
 	.about-imprint
 		grid-area imprint
 
@@ -171,11 +178,16 @@ blockquote
 	.project-right
 		grid-area right
 .project-main
+	padding-bottom 160px
 	p
-		text-indent 30%
+		text-indent 120px
 		margin-top 60px
 	pre code
 		regular()
+	ul
+		li
+			&:nth-child(2n)
+				text-indent 40px
 .project-title
 	h3:last-child
 		text-indent 40px
@@ -274,3 +286,12 @@ heroEndState()
 .pagetransition-exit.pagetransition-exit-active
 	.hero .logo span
 		heroStartState()
+
+
+.imprint-page
+	max-width 720px
+	padding 2rem
+	margin 40px auto
+	h1,h2,h3,h4
+		margin-top 40px
+		margin-bottom 16px
