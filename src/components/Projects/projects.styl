@@ -1,0 +1,74 @@
+.projectslist
+	width 100%
+	overflow hidden
+	position relative
+	height 100vw
+	max-height 100vh
+	margin-top 2rem
+	article 
+		width 400px
+		margin-right 4px
+		&:first-child
+			margin-left 2rem
+		&:last-child
+			margin-right 2rem
+		&:nth-child(2n)
+			margin-top 8rem
+		h3
+			margin-top 4rem
+			transition margin-top 300ms ease
+		.article-image
+			overflow hidden
+			img
+				display block
+				max-width 100%
+				width 100%
+				will-change transform
+				filter blur(0px)
+				transition filter 300ms ease
+				transform scale(1.1) translate3d(0,0,0)
+		&:hover
+			h3
+				margin-top 1.6rem
+			.article-image
+				img
+					filter blur(10px)
+
+.project
+	display grid
+	grid-gap 2rem
+	grid-template-columns 1fr 3fr 1fr
+	grid-template-areas "left main right"
+	margin-top 12.5vh
+	padding 2rem
+	.project-left
+		grid-area left
+	.project-main
+		grid-area main
+	.project-right
+		grid-area right
+		padding-top 55vh
+.project-main
+	padding-bottom 160px
+	p
+		text-indent 120px
+		margin-top 60px
+	ul
+		li
+			&:nth-child(2n)
+				text-indent 40px
+.project-title
+	h3:last-child
+		text-indent 40px
+.video-embed
+	position relative
+	padding-bottom 56.25%
+	margin-bottom 4rem
+	iframe
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		border none
+		outline none

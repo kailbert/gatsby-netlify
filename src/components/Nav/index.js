@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
-import './nav.styl';
+import './nav.styl'
 
 export default class Nav extends Component {
   render() {
@@ -12,9 +12,6 @@ export default class Nav extends Component {
             <li>
               <Link to="/projects" activeClassName="active">Projects</Link>
             </li>
-            {/* <li>
-              <Link to="/projects" activeClassName="active">Projects</Link>
-            </li> */}
             <li>
               <Link to="/about" activeClassName="active">Information</Link>
             </li>

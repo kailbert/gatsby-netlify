@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Link from 'gatsby-link'
 
+import '../components/Intro/intro.styl'
+import introVid from '../components/Intro/intro.mp4'
 export default class ProjectsList extends Component {
 
   constructor(props) {
@@ -31,9 +33,14 @@ export default class ProjectsList extends Component {
     return (
       <div>
         <Link to="/projects">
-         <div className="hero">
-          <div className="logo" ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>Pete Schilling</div>
-        </div>  
+          <div className="hero">
+            <div className="video">
+                <video loop muted="muted" autoPlay>
+                  <source src={introVid} type="video/mp4" />
+                </video>
+            </div>
+            <div className="logo" ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>Pete Schilling</div>
+          </div>  
         </Link>
       </div>
     )

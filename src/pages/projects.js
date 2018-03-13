@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ProjectListing from '../components/Projects/ProjectListing.js'
 import HorizontalScroll from 'react-scroll-horizontal'
 // import $ from 'jquery'
+import '../components/Projects/projects.styl'
 
 export default class ProjectsPage extends Component {
     // THIS would be for mouse scroll

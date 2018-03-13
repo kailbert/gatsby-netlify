@@ -1,0 +1,28 @@
+.about
+	display grid
+	margin 2rem
+	grid-gap 2rem
+	grid-template-columns repeat(6, 1fr)
+	max-width 1420px
+	grid-template-areas "intro intro intro a a a"\
+						"b b clients clients c c"\
+						"d d d d contact contact"\
+						"address address e e e e"\
+						"f f image image g g"\
+						"h h h h imprint imprint"
+	.about-intro
+		grid-area intro
+		margin-bottom 40px
+	.about-clients
+		grid-area clients
+	.about-address
+		grid-area address
+	.about-contact
+		grid-area contact
+	.about-image
+		grid-area image
+		img
+			max-width 75%
+			max-height 75%
+	.about-imprint
+		grid-area imprint

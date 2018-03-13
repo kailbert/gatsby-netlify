@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import Link from 'gatsby-link'
-
+import '../components/About/about.styl'
 import TextDisplace from '../components/TextDisplace'
 
 const aboutText = "Director based in Düsseldorf who works indipendent with a focus on projects of culture, art, fashion and music for industrial and private costumes all over the world."
