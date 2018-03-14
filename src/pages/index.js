@@ -68,7 +68,7 @@ export default class MainPage extends Component {
         <Link to="/#projects">
           <div className="hero">
             <div className="video">
-                <video loop muted="muted" autoPlay>
+                <video loop muted="muted" autoPlay playsInline>
                   <source src={introVid} type="video/mp4" />
                 </video>
             </div>

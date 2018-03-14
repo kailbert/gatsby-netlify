@@ -26,12 +26,15 @@
 		position absolute
 		top 2rem
 		left 50%
-		width 400px
+		width 100%
+		max-width 400px
 		overflow hidden
 		transform translate(-50%,-150%)
 		will-change transform
 		animation-direction both
 		animation fadeInDown 1200ms ease forwards
+		@media screen and (max-width:768px)
+			max-width 280px
 		video
 			max-width 100%
 			max-height 100%
