@@ -18,3 +18,13 @@ collections:
       - {name: client, label: ClientName, widget: string}
       - {name: body, label: Body, widget: markdown}
       - {name: image, label: Image, widget: image}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/data/pages.yml"
+        label: "Information"
+        name: "about"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
