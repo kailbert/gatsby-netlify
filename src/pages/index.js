@@ -96,8 +96,13 @@ export const query = graphql`
       }
     }
     dataYaml {
-      title
+      intro
       address
+      clients
+      social1
+      social2
+      social3
+      image
     }
     pete: imageSharp(id: {regex: "/pete.jpg/"}) {
       sizes(maxWidth:1240, maxHeight:1240, quality:95) {

@@ -12,16 +12,14 @@ export default class AboutPage extends Component {
     return (
       <div className="about" id="about" name="about">
         <div className="about-intro">
-          Director based in Düsseldorf who works indipendent with a focus on projects of culture, art, fashion and music for industrial and private costumes all over the world.
+         {text.intro}
         </div>
         <div className="about-clients">
-          Selected Clients: Leica, Canyon, Warner Music Group, Fritz Cola, Dior, Red Bull Media, TSG, Loreal Paris.
+        {text.clients}
         </div>
         <div className="about-address">
           <h4>Office:</h4>
-          <p>Mintropstrasse 14-16</p>
-          <p>40219 Düsseldorf</p>
-          <p>+49 176 64 36 50 61</p>
+          {text.address}
         </div>
         <div className="about-contact">
           <a href="mailto:kontakt@peteschilling.com">
