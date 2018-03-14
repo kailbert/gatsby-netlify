@@ -32,7 +32,7 @@ export default class TextDisplace extends Component {
                 let spans = $(this).children()
                 for(var a = 0, b = spans.length; a < b; a++){
                     if ((a % 3) == 0) {
-                    spans[a].style.transform = 'translateY('+ (getRandomFloat(-24,24)) + 'px)'
+                    spans[a].style.transform = 'translateY('+ (getRandomFloat(-34,34)) + 'px)'
                     }
                 }
             }, 
@@ -46,30 +46,11 @@ export default class TextDisplace extends Component {
 
     }
 
-    // doShit(){ 
-    //     function getRandomFloat(min, max) {
-    //         return Math.random() * (max - min) + min;
-    //       }
-    //     let spans = $('.textdisplacer').children()
-    //     for(var a = 0, b = spans.length; a < b; a++){
-    //         spans[a].style.transform = 'translateY('+ (getRandomFloat(3,64)) + 'px)'
-    //     }
-    // };
-
-    // undoShit() {
-    //     let spans = document.querySelector('.textdisplacer').getElementsByTagName('span')
-    //     for(var a = 0, b = spans.length; a < b; a++){
-    //         spans[a].style.transform = 'translateY(0px)'
-    //     }
-    // }
-
   render() {
 
     return (
 
-         <div className="textdisplacer" 
-            onMouseEnter={this.doShit}
-            onMouseLeave={this.undoShit}
+        <div className="textdisplacer" 
             ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}
             >
             {this.props.text}

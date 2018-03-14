@@ -39,7 +39,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                 const next = index === posts.length - 1 ? false : posts[index + 1].node
                 createPage({
                     path: node.fields.slug,
-                    component: path.resolve('./src/templates/ProjectTemplate.js'),
+                    component: path.resolve('./src/components/Projects/ProjectPage.js'),
                     context: {
                         slug: node.fields.slug,
                         prev,

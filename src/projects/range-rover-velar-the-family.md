@@ -5,6 +5,8 @@ videoid: '246961358'
 client: 'Land Rover, British Premium Cars'
 image: /assets/velar2.jpg
 ---
+This is what happens when you take the beautiful new Range Rover Velar and tell a story with eight wonderful actors of all ages. Growing up comes with adventures and challenges but you will never forget where your true home is. Special thanks to Daniel Butterworth for the story idea and Moritz Staub for the sound design.
+
 * Director/DOP/Editor
 * Pete Schilling
 * Executive Producer
@@ -25,5 +27,3 @@ image: /assets/velar2.jpg
 * Martin Schilling, Pauline Fernandez
 * Production
 * Neuland
-
-This is what happens when you take the beautiful new Range Rover Velar and tell a story with eight wonderful actors of all ages. Growing up comes with adventures and challenges but you will never forget where your true home is. Special thanks to Daniel Butterworth for the story idea and Moritz Staub for the sound design.

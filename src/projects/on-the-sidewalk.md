@@ -5,6 +5,8 @@ videoid: '176174072'
 client: Fielmann
 image: /assets/fielmann.jpg
 ---
+I shot this one in the streets and on top of buildings in downtown Hamburg, Germany for Fielmann. 
+
 * Director/DOP
 * Pete Schilling
 * Editor
@@ -13,5 +15,3 @@ image: /assets/fielmann.jpg
 * Mira Harnischmacher
 * Production
 * Peoplegrapher
-
-I shot this one in the streets and on top of buildings in downtown Hamburg, Germany for Fielmann. 

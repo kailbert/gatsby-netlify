@@ -5,6 +5,8 @@ videoid: '161599438'
 client: Canyon
 image: /assets/draw.jpg
 ---
+For our client Canyon we packed our bags and a sick mountain bike to shoot some downhill action in France and Italy with three times world champion Fabien Barel. We even met some wolves on our way. 
+
 * Director/DOP/Editor
 * Pete Schilling 
 * Executive Producer
@@ -27,5 +29,3 @@ image: /assets/draw.jpg
 * Canyon
 * Agency
 * LEHN.STEIN
-
-For our client Canyon we packed our bags and a sick mountain bike to shoot some downhill action in France and Italy with three times world champion Fabien Barel. We even met some wolves on our way. 

@@ -1,13 +1,9 @@
-random(min,max)
-	return floor(math(0, 'random')*(max - min + 1) + min)
-
 .hero
 	width 100%
-	height 100vh
+	min-height 100vh
 	display flex
 	justify-content center
 	align-items center
-	overflow hidden
 	transition all 2s ease
 	.logo
 		text-transform uppercase
@@ -19,6 +15,13 @@ random(min,max)
 		animation appear 2000ms ease 1200ms forwards
 		span
 			display inline-block
+	.jobtitle
+		position absolute
+		bottom 20%
+		left 50%
+		transform translateX(-50%)
+		opacity 0
+		animation appear 2000ms ease 1600ms forwards
 	.video
 		position absolute
 		top 2rem
@@ -33,32 +36,6 @@ random(min,max)
 			max-width 100%
 			max-height 100%
 
-heroStartState()
-	opacity 1
-	will-change transform
-	transition all 1200ms ease
-	for i in (1..15)
-		&:nth-child({i})
-			transform translateY(-(random(0, 100)) vh)
-heroEndState()
-	opacity 1
-	transform translateX(0rem)
-.pagetransition-enter
-	.hero .logo span
-		heroStartState()
-
-.pagetransition-enter.pagetransition-enter-active
-	.hero .logo span
-		heroEndState()
-
-.pagetransition-exit 
-	.hero .logo span
-		heroEndState()
-
-.pagetransition-exit.pagetransition-exit-active
-	.hero .logo span
-		heroStartState()
-
 @keyframes fadeInDown
 	0%
 		transform translate(-50%,-150%)
@@ -70,6 +47,3 @@ heroEndState()
 		opacity 0
 	100%
 		opacity 1
-
-.test
-	color red

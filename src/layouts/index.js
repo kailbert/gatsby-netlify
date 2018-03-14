@@ -11,6 +11,7 @@ import './styles/reset.css'
 import "./styles/globalStyles";
 import './styles/main.styl'
 
+
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return this.props.location.pathname === window.location.pathname;
@@ -36,21 +37,21 @@ const TemplateWrapper = ({ children, data, location }) => (
     />
     {/* <Header data={data} location={location}/> */}
     <Nav/>
-    <TransitionGroup>
+    {/* <TransitionGroup>
       <CSSTransition
           key={location.pathname}
           classNames="pagetransition"
-          timeout={{ enter: 1200, exit: 1200 }}
+          timeout={{ enter: 2000, exit: 2000 }}
       >
         <TransitionHandler
             location={location}
-        >
+        > */}
           <div className="mainwrapper">
             {children()}
           </div>
-        </TransitionHandler>
+        {/* </TransitionHandler>
       </CSSTransition>
-    </TransitionGroup>
+    </TransitionGroup> */}
   </div>
 )
 

@@ -2,21 +2,23 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
 import './nav.styl'
+import TextDisplace from '../TextDisplace'
 
 export default class Nav extends Component {
+
   render() {
     return (
       <div>
         <nav>
           <ul>
             <li>
-              <Link to="/projects" activeClassName="active">Projects</Link>
+              <Link to="/"><TextDisplace text="Pete Schilling"/></Link>
             </li>
             <li>
-              <Link to="/about" activeClassName="active">Information</Link>
+              <a href="/#projects"><TextDisplace text="Projects"/></a>
             </li>
             <li>
-              <Link to="/contact" activeClassName="active">Contact</Link>
+              <a href="/#about" ><TextDisplace text="Information"/></a>
             </li>
           </ul>
         </nav>

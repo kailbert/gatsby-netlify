@@ -1,15 +1,20 @@
 .about
 	display grid
-	margin 2rem
 	grid-gap 2rem
 	grid-template-columns repeat(6, 1fr)
-	max-width 1420px
+	max-width 1440px
+	margin 0 auto 
+	padding 2rem 2rem 16rem 2rem
 	grid-template-areas "intro intro intro a a a"\
 						"b b clients clients c c"\
 						"d d d d contact contact"\
 						"address address e e e e"\
 						"f f image image g g"\
 						"h h h h imprint imprint"
+	@media screen and (max-width:768px)
+		display block
+		> div
+			margin-bottom 40px
 	.about-intro
 		grid-area intro
 		margin-bottom 40px

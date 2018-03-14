@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-import '../components/Projects/projects.styl'
-import TextDisplace from '../components/TextDisplace'
+import './projects.styl'
+import TextDisplace from '../TextDisplace'
 
 
 export default class ProjectPage extends Component {
@@ -30,7 +30,7 @@ export default class ProjectPage extends Component {
           }} />
         </div>
         <div className="project-right">
-          <Link to="/projects">
+          <Link to="/#projects">
             <TextDisplace text="+ Back to Projects"/>
           </Link>
         </div>

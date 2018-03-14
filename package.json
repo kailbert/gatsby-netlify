@@ -4,13 +4,12 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "animejs": "^2.2.0",
-    "charming": "^2.2.2",
-    "gatsby": "^1.9.223",
-    "gatsby-image": "^1.0.41",
-    "gatsby-link": "^1.6.38",
+    "anchorate": "^1.2.3",
+    "gatsby": "^1.9.232",
+    "gatsby-image": "^1.0.42",
+    "gatsby-link": "^1.6.39",
     "gatsby-plugin-netlify-cms": "^1.0.11",
-    "gatsby-plugin-react-helmet": "^2.0.6",
+    "gatsby-plugin-react-helmet": "^2.0.7",
     "gatsby-plugin-sharp": "^1.6.39",
     "gatsby-plugin-stylus": "^1.1.16",
     "gatsby-source-filesystem": "^1.5.26",
@@ -18,10 +17,10 @@
     "gatsby-transformer-sharp": "^1.6.22",
     "jquery": "^3.3.1",
     "react-helmet": "^5.2.0",
-    "react-scroll-horizontal": "^1.2.1",
     "react-transition-group": "^2.2.1",
     "rellax": "^1.6.0",
-    "styled-components": "^3.2.1"
+    "smooth-scroll": "^12.1.5",
+    "styled-components": "^3.2.2"
   },
   "keywords": [
     "gatsby"
