@@ -28,9 +28,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Introduction Text", name: "intro", widget: markdown}
           - {label: "Clients", name: "clients", widget: markdown}
-          - {label: "Address", name: "address", widget: list}
-          - {label: "Social Link 1", name: "social1", widget: text}
-          - {label: "Social Name 1", name: "social1name", widget: text}
+          - {label: "Address Line 1", name: "address1", widget: string}
+          - {label: "Address Line 2", name: "address2", widget: string}
+          - {label: "Address Line 3", name: "address3", widget: string}
+          - {label: "Social Link 1", name: "social1", widget: string}
+          - {label: "Social Name 1", name: "social1name", widget: string}
           - {label: "Social Link 2", name: "social2", widget: string}
+          - {label: "Social Name 2", name: "social2name", widget: string}
           - {label: "Social Link 3", name: "social3", widget: string}
+          - {label: "Social Name 3", name: "social3name", widget: string}
           - {name: image, label: Image, widget: image}
