@@ -8,7 +8,7 @@ import TextDisplace from '../TextDisplace'
 
 export default class AboutPage extends Component {
   render() {
-    const {image} = this.props;
+    const {image, text} = this.props;
     return (
       <div className="about" id="about" name="about">
         <div className="about-intro">

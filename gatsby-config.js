@@ -26,6 +26,13 @@ module.exports = {
       //  excerpt_separator: `<!-- End -->`
       }
     },
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-netlify-cms'

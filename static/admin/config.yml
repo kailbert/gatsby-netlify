@@ -26,5 +26,10 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Address", name: "address", widget: "string"}
+          - {label: "Introduction Text", name: "intro", widget: markdown}
+          - {label: "Clients", name: "clients", widget: markdown}
+          - {label: "Address", name: "address", widget: markdown}
+          - {label: "Social Link 1", name: "social1", widget: string}
+          - {label: "Social Link 2", name: "social2", widget: string}
+          - {label: "Social Link 3", name: "social3", widget: string}
+          - {name: image, label: Image, widget: image}

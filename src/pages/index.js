@@ -79,7 +79,7 @@ export default class MainPage extends Component {
 
         <ProjectsList data={data}/>
 
-        <AboutPage image={data.pete}/>
+        <AboutPage image={data.pete} text={data.dataYaml}/>
         
       </div>
     )
@@ -94,6 +94,10 @@ export const query = graphql`
         title
         desc
       }
+    }
+    dataYaml {
+      title
+      address
     }
     pete: imageSharp(id: {regex: "/pete.jpg/"}) {
       sizes(maxWidth:1240, maxHeight:1240, quality:95) {
