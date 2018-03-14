@@ -29,10 +29,10 @@ class TransitionHandler extends React.Component {
 const TemplateWrapper = ({ children, data, location }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Pete Schilling – Director/DOP"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Pete Schilling – Director/DOP' },
+        { name: 'keywords', content: 'Pete Schilling, Director/DOP' },
       ]}
     />
     {/* <Header data={data} location={location}/> */}

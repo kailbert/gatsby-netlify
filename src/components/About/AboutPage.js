@@ -8,7 +8,7 @@ import TextDisplace from '../TextDisplace'
 
 export default class AboutPage extends Component {
   render() {
-    const {image, text} = this.props;
+    const {text} = this.props;
     return (
       <div className="about" id="about" name="about">
         <div className="about-intro">
@@ -19,21 +19,23 @@ export default class AboutPage extends Component {
         </div>
         <div className="about-address">
           <h4>Office:</h4>
-          {text.address}
+          <p>{text.address1}</p>
+          <p>{text.address2}</p>
+          <p>{text.address3}</p>
         </div>
         <div className="about-contact">
-          <a href="mailto:kontakt@peteschilling.com">
-            <TextDisplace text="kontakt(at)peteschilling.com"></TextDisplace>
+          <a href={text.social1name}>
+            <TextDisplace text={text.social1}></TextDisplace>
           </a>
-          <a href="https://vimeo.com/peteschilling" target="_blank">
-            <TextDisplace text="Vimeo: PeteSchilling"></TextDisplace>
+          <a href={text.social2name} target="_blank">
+            <TextDisplace text={text.social2}></TextDisplace>
           </a>
-          <a href="https://instagram.com/peteschilling" target="_blank">
-            <TextDisplace text="instagram: pete.schilling"></TextDisplace>
+          <a href={text.social3name} target="_blank">
+            <TextDisplace text={text.social3}></TextDisplace>
           </a>
         </div>
         <div className="about-image">
-          <Img sizes={image.sizes} />
+          <img src={text.image} alt="Pete Schilling" />
         </div>
           <div className="about-imprint">
             <Link to="/imprint"><TextDisplace text="+ Imprint"></TextDisplace></Link>

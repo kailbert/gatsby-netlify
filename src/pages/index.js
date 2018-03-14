@@ -97,11 +97,16 @@ export const query = graphql`
     }
     dataYaml {
       intro
-      address
+      address1
+      address2
+      address3
       clients
       social1
+      social1name
       social2
+      social2name
       social3
+      social3name
       image
     }
     pete: imageSharp(id: {regex: "/pete.jpg/"}) {
