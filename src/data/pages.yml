@@ -5,13 +5,13 @@ intro: >-
 clients: >-
   Selected Clients: Leica, Canyon, Warner Music Group, Fritz Cola, Dior, Red
   Bull Media, TSG, Loreal Paris.
-address: |-
-  Mintropstrasse 14-16
-
-  40219 Düsseldorf
-
-  +49 176 64 36 50 61
-social1: kontakt(at)peteschilling.com
+address1: Mintropstrasse 14-16
+address2: 40219 Düsseldorf
+address3: +49 176 64 36 50 61
+social1: info(at)peteschilling.com
+social1name: 'mailto:info@peteschilling.com'
 social2: 'Vimeo: PeteSchilling'
+social2name: 'http://www.vimeo.com/peteschilling'
 social3: 'instagram: pete.schilling'
+social3name: 'http://www.instagram.com/pete.schilling'
 image: /assets/58503_p.jpg
