@@ -10,7 +10,8 @@
 						"d d d d contact contact"\
 						"address address e e e e"\
 						"f f image image g g"\
-						"h h h h imprint imprint"
+						"h h h h imprint imprint"\
+						"j text text text text i"
 	@media screen and (max-width:768px)
 		display block
 		> div
@@ -30,3 +31,27 @@
 			max-width 66.6%
 	.about-imprint
 		grid-area imprint
+	.about-text
+		grid-area text
+		margin-top 80px
+		display grid
+		grid-gap 2rem
+		grid-template-columns repeat(4,1fr)
+		grid-template-areas ". a a a"\
+							"b b . ."\
+							". c c c"\
+							"d d d ."
+		@media screen and (max-width:768px)
+			display block
+		p
+			width 100%
+		p:nth-child(1)
+			grid-area a
+		p:nth-child(2)
+			grid-area b
+		p:nth-child(3)
+			grid-area c
+		p:nth-child(4)
+			grid-area d
+		p + p
+			margin-top 40px
