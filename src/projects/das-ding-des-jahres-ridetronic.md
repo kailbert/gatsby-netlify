@@ -2,7 +2,7 @@
 title: Das Ding des Jahres - Ridetronic
 date: '2018-03-13'
 videoid: '258263411'
-client: Brainpool
+client: Das Ding des Jahres
 image: /assets/dddj.jpg
 ---
 
@@ -13,6 +13,8 @@ Ridetronic takes agility to a new level. This e-bike does not take any compromis
 * Pete Schilling
 * Director
 * Christian Belzer, Pete Schilling
+* Client
+* Das Ding des Jahres, Brainpool
 * Sound-Design/Mix
 * Moritz Staub
 * Grading
