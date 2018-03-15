@@ -11,6 +11,7 @@ import './styles/reset.css'
 import "./styles/globalStyles";
 import './styles/main.styl'
 
+import favicon from '../images/favicon.png';
 
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -34,7 +35,9 @@ const TemplateWrapper = ({ children, data, location }) => (
         { name: 'description', content: 'Pete Schilling – Director/DOP' },
         { name: 'keywords', content: 'Pete Schilling, Director/DOP' },
       ]}
-    />
+    >
+    <link rel="shortcut icon" type="image/png" href={favicon} />
+    </Helmet>
     {/* <Header data={data} location={location}/> */}
     <Nav/>
     {/* <TransitionGroup>
