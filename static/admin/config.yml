@@ -38,3 +38,7 @@ collections:
           - {label: "Social Link 3", name: "social3", widget: string}
           - {label: "Social Name 3", name: "social3name", widget: string}
           - {name: image, label: Image, widget: image}
+          - {label: "Bio 1.Paragraph", name: "aboutText1", widget: text}
+          - {label: "Bio 2.Paragraph", name: "aboutText2", widget: text}
+          - {label: "Bio 3.Paragraph", name: "aboutText3", widget: text}
+          - {label: "Bio 4.Paragraph", name: "aboutText4", widget: text}
