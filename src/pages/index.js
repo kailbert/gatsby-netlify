@@ -108,6 +108,10 @@ export const query = graphql`
       social3
       social3name
       image
+      aboutText1
+      aboutText2
+      aboutText3
+      aboutText4
     }
     pete: imageSharp(id: {regex: "/pete.jpg/"}) {
       sizes(maxWidth:1240, maxHeight:1240, quality:95) {
