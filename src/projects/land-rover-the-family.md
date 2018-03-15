@@ -8,24 +8,46 @@ image: >-
 ---
 This is what happens when you take the beautiful new Range Rover Velar and tell a story with eight wonderful actors of all ages. Growing up comes with adventures and challenges but you will never forget where your true home is. Special thanks to Daniel Butterworth for the story idea and Moritz Staub for the sound design.
 
-	•	Director/DOP/Editor: Pete Schilling
+	•	Director/DOP/Editor
 
-	•	Executive Producer: Artur Lik
+	•	Pete Schilling
 
-	•	Client: Land Rover, British Premium Cars
+	•	Executive Producer
 
-	•	Sound-Design: Moritz Staub
+	•	Artur Lik
 
-	•	Main-actor: Stephan Kaefer
+	•	Client
 
-	•	Grading: Marina Starke
+	•	Land Rover, British Premium Cars
 
-	•	Gaffer/Assistant: Niklas Hill
+	•	Sound-Design
 
-	•	Script: Daniel Butterworth
+	•	Moritz Staub
 
-	•	Aerials: Kopterwork
+	•	Main-actor
 
-	•	Producer: Martin Schilling, Pauline Fernandez
+	•	Stephan Kaefer
 
-	•	Production: Neuland
+	•	Grading
+
+	•	Marina Starke
+
+	•	Gaffer/Assistant 
+
+	•	Niklas Hill
+
+	•	Script
+
+	•	Daniel Butterworth
+
+	•	Aerials 
+
+	•	Kopterwork
+
+	•	Producer
+
+	•	Martin Schilling, Pauline Fernandez
+
+	•	Production
+
+	•	Neuland
