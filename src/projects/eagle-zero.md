@@ -1,9 +1,9 @@
 ---
 title: Eagle Zero
-date: '2018-03-12'
+date: '2018-03-10'
 videoid: '215043468'
 client: Arkk
-image: /assets/arkk.jpg
+image: /assets/zero.jpg
 ---
 
 ARKK Copenhagen is a unisex sneakers brand. They create sports orientated fashion sneakers, designed to make your day just a little bit better. I teamed up with Joel Rieger for amazing 3D animations and Moritz Staub for perfect audio composition and sound design. 

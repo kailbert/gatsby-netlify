@@ -1,6 +1,6 @@
 ---
 title: Das Ding des Jahres - Ridetronic
-date: '2018-03-08'
+date: '2018-03-13'
 videoid: '258263411'
 client: Brainpool
 image: /assets/dddj.jpg
