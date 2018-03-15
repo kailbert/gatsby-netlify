@@ -6,7 +6,7 @@ exports.onRouteUpdate = () => {
           if (!element) return false
             //   element.scrollIntoView({ behavior: 'smooth' })
             $('html, body').animate({
-                scrollTop: $(element).offset().top - 100
+                scrollTop: $(element).offset().top
             }, 1200);
           return true
         }
