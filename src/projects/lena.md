@@ -1,8 +1,8 @@
 ---
-title: 'L’Oréal Make-Up with Lena Meyer-Landrut'
-date: '2018-03-098'
+title: Lena Meyer-Landrut
+date: 2018-03-098
 videoid: '177598060'
-client: Jolie Magazine
+client: L'Oreal
 image: /assets/lena.jpg
 ---
 
@@ -14,6 +14,8 @@ After having already shot some projects for Jolie Magazine in Munich we went bac
 * Philip Bruederle
 * Producer
 * Anika Bergmann Pohl
+* Client
+* Jolie Magazine, L'Oreal
 * Model
 * Lena Meyer Landrut for L'Oreal Paris
 * Gaffer, Set Mood, Photographer
