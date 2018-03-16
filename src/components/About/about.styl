@@ -19,8 +19,14 @@
 	.about-intro
 		grid-area intro
 		margin-bottom 40px
+		text-indent 120px
+		@media screen and (max-width:768px)
+			text-indent 60px
 	.about-clients
 		grid-area clients
+		text-indent 120px
+		@media screen and (max-width:768px)
+			text-indent 60px
 	.about-address
 		grid-area address
 	.about-contact
@@ -47,7 +53,9 @@
 			display block
 		p
 			width 100%
-			text-indent 40px
+			text-indent 120px
+			@media screen and (max-width:768px)
+				text-indent 60px
 		p:nth-child(1)
 			grid-area a
 		p:nth-child(2)
