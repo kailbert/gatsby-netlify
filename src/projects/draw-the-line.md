@@ -13,7 +13,7 @@ For our client Canyon we packed our bags and a sick mountain bike to shoot some 
 * Philip Bruederle
 * Art Director
 * Dennis Nußbaum
-* Rrider
+* Rider
 * Fabien Barel
 * Product Manager
 * Daniel Oster
