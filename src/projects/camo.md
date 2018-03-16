@@ -1,7 +1,7 @@
 ---
 title: Camo
 date: '2018-03-11'
-videoid: '252924684'
+videoid: '259672598'
 client: Arkk
 image: /assets/camo.jpg
 ---
