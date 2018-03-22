@@ -2,7 +2,7 @@
 title: Range Rover Velar
 date: '2018-03-12'
 videoid: '259674550'
-client: 'Land Rover,'
+client: Land Rover
 image: /assets/velar.jpg
 ---
 
