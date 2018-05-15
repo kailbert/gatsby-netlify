@@ -1,6 +1,6 @@
 .projectslist
 	display grid
-	grid-gap 8rem 4px
+	grid-gap 50vh 4px
 	grid-template-columns repeat(5,1fr)
 	margin 6rem auto 16rem auto 
 	padding 2rem
@@ -20,12 +20,13 @@
 		article:nth-child(7)
 			grid-column span 1
 	article 
-		&:first-child
-			margin-top 16rem
+		// &:first-child
+		// 	margin-top 16rem
+		margin-top 0rem
 		&:nth-child(2n)
 			margin-top 8rem
-		&:nth-child(4n)
-			margin-top 16rem
+		// &:nth-child(4n)
+		// 	margin-top 16rem
 		.project-title
 			font-family 'AkkuratBold'
 			font-weight normal
@@ -59,7 +60,7 @@
 		grid-area main
 	.project-right
 		grid-area right
-		padding-top 55vh
+		padding-top 161%
 		@media screen and (max-width:768px)
 			padding-top 0px
 			padding-bottom 160px

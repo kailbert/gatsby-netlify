@@ -26,24 +26,51 @@ export default class ProjectThumb extends Component {
         }
         insertSpan(sentence, wordsToArray(sentence.textContent))
         
+        const sentence2 = this.article2
+        let wordsToArray2 = (str) => str.split('').map(e => e === ' ' ? '&nbsp;' : e)
+    
+        function insertSpan(elem, letters) {
+          elem.textContent = ''
+
+          for(let letter of letters) {
+            let span = document.createElement('span')
+            span.innerHTML = letter
+            elem.appendChild(span)
+          }
+
+        }
+        insertSpan(sentence2, wordsToArray(sentence2.textContent))
+        
         $('.textdisplacer-article').hover(
             
             function() {
                 function getRandomFloat(min, max) {
                     return Math.random() * (max - min) + min;
                 }
+                let spanstwo = $(this).find(".textdisplacer-texttwo").children()
+                for(var a = 0, b = spanstwo.length; a < b; a++){
+                    if ((a % 3) == 0) {
+                        spanstwo[a].style.transform = 'translateY('+ (getRandomFloat(0,34)) + 'px)'
+                    }
+                }
                 let spans = $(this).find(".textdisplacer-text").children()
                 for(var a = 0, b = spans.length; a < b; a++){
                     if ((a % 3) == 0) {
-                        spans[a].style.transform = 'translateY('+ (getRandomFloat(-34,34)) + 'px)'
+                        spans[a].style.transform = 'translateY('+ (getRandomFloat(-34,0)) + 'px)'
                     }
                 }
+               
             }, 
             function() {
+                let spanstwo = $(this).find(".textdisplacer-texttwo").children()
+                for(var a = 0, b = spanstwo.length; a < b; a++){
+                    spanstwo[a].style.transform = 'translateY(0px)'
+                }
                 let spans = $(this).find(".textdisplacer-text").children()
                 for(var a = 0, b = spans.length; a < b; a++){
                     spans[a].style.transform = 'translateY(0px)'
                 }
+                
             }
         )
 
@@ -62,8 +89,8 @@ export default class ProjectThumb extends Component {
                 <div className="textdisplacer-text project-title" ref={(article) => this.article = ReactDOM.findDOMNode(article)}>
                     {post.frontmatter.title}
                 </div>
-                <div className="project-client">
-                {post.frontmatter.client}
+                <div className="textdisplacer-texttwo project-client" ref={(article2) => this.article2 = ReactDOM.findDOMNode(article2)}>
+                    {post.frontmatter.client}
                 </div>
             </Link>
         </article>

@@ -58,13 +58,30 @@ export default class MainPage extends Component {
     $(".letter:nth-child(13)").attr("data-rellax-speed", "0")   // n
     $(".letter:nth-child(14)").attr("data-rellax-speed", "5")   // g
     var rellax = new Rellax(".letter");
-   
+    
+
+    const loader = this.loadering
+    let wordsToArrayloader = (str) => str.split('').map(e => e === ' ' ? '&nbsp;' : e)
+
+    function insertSpan(elem, letters) {
+      elem.textContent = ''
+
+      for(let letter of letters) {
+        let span = document.createElement('span')
+        span.className = 'letter'
+        span.innerHTML = letter
+        elem.appendChild(span)
+      }
+
+    }
+    insertSpan(loader, wordsToArrayloader(loader.textContent))
   };
 
   render() {
     const {data} = this.props;
     return (
       <div>
+        <div className="loader"ref={(loadering) => this.loadering = ReactDOM.findDOMNode(loadering)}>Loading...</div>
         <Link to="/#projects">
           <div className="hero">
             <div className="video">
@@ -73,7 +90,7 @@ export default class MainPage extends Component {
                 </video>
             </div>
             <div className="logo" ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>Pete Schilling</div>
-            <div className="jobtitle">Director/DOP</div>
+            {/* <div className="jobtitle">Director/DOP</div> */}
           </div>  
         </Link>
 
@@ -108,10 +125,6 @@ export const query = graphql`
       social3
       social3name
       image
-      aboutText1
-      aboutText2
-      aboutText3
-      aboutText4
     }
     pete: imageSharp(id: {regex: "/pete.jpg/"}) {
       sizes(maxWidth:1240, maxHeight:1240, quality:95) {

@@ -12,13 +12,13 @@ export default class Nav extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/"><TextDisplace text="Pete Schilling"/></Link>
-            </li>
-            <li>
               <a href="/#projects"><TextDisplace text="Projects"/></a>
             </li>
             <li>
-              <a href="/#about" ><TextDisplace text="Information"/></a>
+              <a href="/#about" ><TextDisplace text="About"/></a>
+            </li>
+            <li>
+              <a href="/#contact"><TextDisplace text="Contact"/></a>
             </li>
           </ul>
         </nav>
