@@ -1,6 +1,6 @@
 ---
 title: My Diary
-date: '2018-07-04'
+date: '2018-02-01'
 videoid: '259673854'
 client: Marco Klahold
 image: /assets/marco_klahold_my_diary.jpg
