@@ -50,13 +50,13 @@ export default class ProjectThumb extends Component {
                 let spanstwo = $(this).find(".textdisplacer-texttwo").children()
                 for(var a = 0, b = spanstwo.length; a < b; a++){
                     if ((a % 3) == 0) {
-                        spanstwo[a].style.transform = 'translateY('+ (getRandomFloat(0,34)) + 'px)'
+                        spanstwo[a].style.transform = 'translateY('+ (getRandomFloat(0,44)) + 'px)'
                     }
                 }
                 let spans = $(this).find(".textdisplacer-text").children()
                 for(var a = 0, b = spans.length; a < b; a++){
                     if ((a % 3) == 0) {
-                        spans[a].style.transform = 'translateY('+ (getRandomFloat(-34,0)) + 'px)'
+                        spans[a].style.transform = 'translateY('+ (getRandomFloat(-144,0)) + 'px)'
                     }
                 }
                

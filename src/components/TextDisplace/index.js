@@ -32,7 +32,7 @@ export default class TextDisplace extends Component {
                 let spans = $(this).children()
                 for(var a = 0, b = spans.length; a < b; a++){
                     if ((a % 3) == 0) {
-                    spans[a].style.transform = 'translateY('+ (getRandomFloat(-34,34)) + 'px)'
+                    spans[a].style.transform = 'translateY('+ (getRandomFloat(-64,64)) + 'px)'
                     }
                 }
             }, 

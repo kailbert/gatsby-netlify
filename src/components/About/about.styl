@@ -3,7 +3,6 @@
 	grid-gap 2rem
 	grid-template-columns repeat(6, 1fr)
 	max-width 1440px
-	margin 0 auto 
 	padding 2rem 2rem 16rem 2rem
 	grid-template-areas "intro intro intro a a a"\
 						"b b clients clients c c"\
@@ -19,14 +18,8 @@
 	.about-intro
 		grid-area intro
 		margin-bottom 40px
-		text-indent 120px
-		@media screen and (max-width:768px)
-			text-indent 60px
 	.about-clients
 		grid-area clients
-		text-indent 120px
-		@media screen and (max-width:768px)
-			text-indent 60px
 	.about-address
 		grid-area address
 	.about-contact
