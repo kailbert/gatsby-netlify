@@ -5,18 +5,31 @@ videoid: 'https://vimeo.com/303070265'
 client: Mercedes Benz
 image: /assets/mercedes_unexplaainable_16by9_01.jpg
 ---
-* Director: Pete Schilling
-* DOP: Niklas Hill, 
+* Director
 * Pete Schilling
-* Sound-Design/Mix: Moritz Staub
-* Gaffer: Thorben Winkler
-* Editor: Pete Schilling
-* 1st AC: Johannes Suntrup
-* Colorist: Lutz Forster
-* Producer: Martin Schilling
-* VFX-Retouching: Tim Hunkemöller
-* Lighting Technicians: Clemens Florack, Paul Schön
-* Assistants: Vinh Vu, Veronika Penz, Paul Muders, Tim Hunkemöller
-* Set Photography: Veronika Penz, Paul Muders, Tim Hunkemöller
-* Talent: Robin Soho
-* Production: Neuland
+* DOP
+* Niklas Hill, Pete Schilling
+* Sound-Design/Mix
+* Moritz Staub
+* Gaffer
+* Thorben Winkler
+* Editor
+* Pete Schilling
+* 1st AC
+* Johannes Suntrup
+* Colorist
+* Lutz Forster
+* Producer
+* Martin Schilling
+* VFX-Retouching
+* Tim Hunkemöller
+* Lighting Technicians
+* Clemens Florack, Paul Schön
+* Assistants
+* Vinh Vu, Veronika Penz, Paul Muders, Tim Hunkemöller
+* Set Photography
+* Veronika Penz, Paul Muders, Tim Hunkemöller
+* Talent
+* Robin Soho
+* Production
+* Neuland
