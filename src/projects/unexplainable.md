@@ -2,7 +2,7 @@
 title: Unexplainable
 date: '2018-11-27'
 videoid: '303070265'
-client: Mercedes Benz
+client: Mercedes-Benz
 image: /assets/mercedes_unexplaainable_16by9_01.jpg
 ---
 * Director
@@ -21,7 +21,7 @@ image: /assets/mercedes_unexplaainable_16by9_01.jpg
 * Lutz Forster
 * Producer
 * Martin Schilling
-* VFX-Retouching
+* Retouching
 * Tim Hunkemöller
 * Lighting Technicians
 * Clemens Florack, Paul Schön
