@@ -1,9 +1,10 @@
 ---
 title: Ich bleib
+published: true
 date: '2019-01-15'
 videoid: '310983020'
 client: Döll
-image: /assets/sammler_döll_ich bleib_10_online.00_02_42_13.standbild130.jpg
+image: /assets/sammler.jpg
 ---
 * Director 
 * Pete Schilling 

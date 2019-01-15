@@ -6,9 +6,13 @@ import './projects.styl'
 const ProjectsList = ({ data }) => 
     <div className="projectslist" id="projects" name="projects">
 
-        {data.allMarkdownRemark.edges.map(({node}) => {
-            return <ProjectThumb post={node} key={node.id} />
-        })}
+        {
+            data.allMarkdownRemark.edges.map(({node}) => (
+            node.frontmatter.published ?
+            <ProjectThumb post={node} key={node.id} /> 
+            : null
+        ))
+        }
 
     </div>
 ;

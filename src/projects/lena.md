@@ -1,5 +1,6 @@
 ---
 title: Lena Meyer-Landrut
+published: true
 date: 2018-03-098
 videoid: '259669375'
 client: L'Oreal

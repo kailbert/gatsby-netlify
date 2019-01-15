@@ -13,6 +13,7 @@ collections:
     create: true
     fields:
       - {name: title, label: Title}
+      - {name: published, label: "Visible on Mainpage?", widget: boolean, default: true}
       - {name: date, label: Date, widget: date}
       - {name: videoid, label: VideoId, widget: string}
       - {name: client, label: ClientName, widget: string}

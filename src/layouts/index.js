@@ -30,10 +30,10 @@ class TransitionHandler extends React.Component {
 const TemplateWrapper = ({ children, data, location }) => (
   <div>
     <Helmet
-      title="Pete Schilling – Director/DOP"
+      title="Pete Schilling – Director"
       meta={[
-        { name: 'description', content: 'Pete Schilling – Director/DOP' },
-        { name: 'keywords', content: 'Pete Schilling, Director/DOP' },
+        { name: 'description', content: 'Pete Schilling – Director' },
+        { name: 'keywords', content: 'Pete Schilling, Director' },
       ]}
     >
     <link rel="shortcut icon" type="image/png" href={favicon} />

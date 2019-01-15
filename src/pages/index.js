@@ -156,6 +156,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            published
             date(formatString:"DD.MM.YYYY")
             image
             videoid

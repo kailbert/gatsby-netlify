@@ -1,5 +1,6 @@
 ---
 title: Tronicdrive Ridetronic
+published: true
 date: '2018-03-13'
 videoid: '259676751'
 client: Das Ding des Jahres
