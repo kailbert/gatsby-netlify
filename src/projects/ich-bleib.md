@@ -1,9 +1,9 @@
 ---
 title: Ich bleib
 date: '2019-01-15'
-videoid: '311488990'
+videoid: '310983020'
 client: Döll
-image: /assets/sammler.jpg
+image: /assets/doell_ich_bleib.jpg
 ---
 * Director 
 * Pete Schilling 
