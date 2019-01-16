@@ -15,7 +15,7 @@ image: /assets/zero.jpg
 * Marcel Heim
 * Grading
 * Patrick Laukemper
-* Photograph
+* Photographer
 * Stephan Schmick
 * Assistant
 * Niklas Hill
