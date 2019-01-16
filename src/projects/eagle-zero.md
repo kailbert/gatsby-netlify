@@ -6,10 +6,6 @@ videoid: '259670881'
 client: Arkk
 image: /assets/zero.jpg
 ---
-
-ARKK Copenhagen is a unisex sneakers brand. They create sports orientated fashion sneakers, designed to make your day just a little bit better. I teamed up with Joel Rieger for amazing 3D animations and Moritz Staub for perfect audio composition and sound design. 
-
-* Director/DOP/Editor
 * Pete Schilling
 * VFX
 * Joel Rieger
