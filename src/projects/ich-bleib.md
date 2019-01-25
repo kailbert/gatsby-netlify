@@ -24,3 +24,5 @@ image: /assets/doell_ich_bleib.jpg
 * Neuland
 * Rental
 * CineOne
+
+Shot on 16mm film
