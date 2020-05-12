@@ -1,6 +1,6 @@
 ---
 title: Camo
-published: true
+published: false
 date: '2018-03-11'
 videoid: '259672598'
 client: Arkk
