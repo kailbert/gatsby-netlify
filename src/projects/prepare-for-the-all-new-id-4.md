@@ -4,6 +4,6 @@ published: true
 date: '2020-04-12'
 videoid: '416277946'
 client: Volkswagen
-image: /assets/prepare for the all-new id. 4 i volkswagen_02.jpg
+image: /assets/prepare for the all-new id. 4 i volkswagen_01.jpg
 ---
 
