@@ -17,7 +17,7 @@ collections:
       - {name: date, label: Date, widget: date}
       - {name: videoid, label: VideoId, widget: string}
       - {name: client, label: ClientName, widget: string}
-      - {name: body, label: Body, widget: markdown}
+      - {name: body, label: Body, widget: markdown, required: false}
       - {name: image, label: Image, widget: image}
   - name: "pages"
     label: "Pages"
