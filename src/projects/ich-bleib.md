@@ -1,6 +1,6 @@
 ---
 title: Ich bleib
-published: false
+published: true
 date: '2018-01-15'
 videoid: '310983020'
 client: Döll
