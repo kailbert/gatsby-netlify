@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Img from 'gatsby-image'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import './about.styl'
 import TextDisplace from '../TextDisplace'
 
@@ -26,10 +25,10 @@ export default class AboutPage extends Component {
           <a href={text.social1name}>
             <TextDisplace text={text.social1}></TextDisplace>
           </a>
-          <a href={text.social2name} target="_blank">
+          <a href={text.social2name} target="_blank" rel="noreferrer">
             <TextDisplace text={text.social2}></TextDisplace>
           </a>
-          <a href={text.social3name} target="_blank">
+          <a href={text.social3name} target="_blank" rel="noreferrer">
             <TextDisplace text={text.social3}></TextDisplace>
           </a>
         </div>

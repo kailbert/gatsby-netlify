@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import Img from 'gatsby-image'
+import { Link } from "gatsby"
 
 import ReactDOM from 'react-dom'
 
@@ -27,7 +26,7 @@ export default class ProjectThumb extends Component {
         insertSpan(sentence, wordsToArray(sentence.textContent))
         
         const sentence2 = this.article2
-        let wordsToArray2 = (str) => str.split('').map(e => e === ' ' ? '&nbsp;' : e)
+        // let wordsToArray2 = (str) => str.split('').map(e => e === ' ' ? '&nbsp;' : e)
     
         function insertSpan(elem, letters) {
           elem.textContent = ''
@@ -49,13 +48,13 @@ export default class ProjectThumb extends Component {
                 }
                 let spanstwo = $(this).find(".textdisplacer-texttwo").children()
                 for(var a = 0, b = spanstwo.length; a < b; a++){
-                    if ((a % 3) == 0) {
+                    if ((a % 3) === 0) {
                         spanstwo[a].style.transform = 'translateY('+ (getRandomFloat(0,44)) + 'px)'
                     }
                 }
                 let spans = $(this).find(".textdisplacer-text").children()
                 for(var a = 0, b = spans.length; a < b; a++){
-                    if ((a % 3) == 0) {
+                    if ((a % 3) === 0) {
                         spans[a].style.transform = 'translateY('+ (getRandomFloat(-144,0)) + 'px)'
                     }
                 }

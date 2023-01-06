@@ -1,17 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
-import withRouter from 'react-router-dom/withRouter'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
-
-import Nav from '../components/Nav'
+import Nav from '../Nav'
 
 import './styles/reset.css'
-import "./styles/globalStyles";
 import './styles/main.styl'
 
-import favicon from '../images/favicon.png';
+import favicon from '../../images/favicon.png';
 
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -50,7 +45,7 @@ const TemplateWrapper = ({ children, data, location }) => (
             location={location}
         > */}
           <div className="mainwrapper">
-            {children()}
+            {children}
           </div>
         {/* </TransitionHandler>
       </CSSTransition>
