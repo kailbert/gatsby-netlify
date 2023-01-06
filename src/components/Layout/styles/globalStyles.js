@@ -1,3 +1,5 @@
+import { createGlobalStyle } from 'styled-components';
+
 import linetoAkkuratBoldEOT from "./fonts/lineto-akkurat-bold.eot"
 import linetoAkkuratBoldWOFF from "./fonts/lineto-akkurat-bold.woff"
 import linetoAkkuratBoldWOFF2 from "./fonts/lineto-akkurat-bold.woff2"
@@ -6,9 +8,8 @@ import linetoAkkuratRegularEOT from "./fonts/lineto-akkurat-regular.eot"
 import linetoAkkuratRegularWOFF from "./fonts/lineto-akkurat-regular.woff"
 import linetoAkkuratRegularWOFF2 from "./fonts/lineto-akkurat-regular.woff2"
 
-import { injectGlobal } from "styled-components";
 
-export default injectGlobal`
+const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "AkkuratBold";
     font-style: normal;
@@ -25,4 +26,8 @@ export default injectGlobal`
         url(${linetoAkkuratRegularWOFF2}) format("woff2"), 
         url(${linetoAkkuratRegularWOFF}) format("woff");
   }
+  body{
+    font-family: "AkkuratRegular", sans-serif;
+  }
 `
+export default GlobalStyle

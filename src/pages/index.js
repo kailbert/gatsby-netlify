@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Link from 'gatsby-link'
+import { Link } from "gatsby"
 import '../components/Intro/intro.styl'
 import introVid from '../components/Intro/intro.mp4'
 import ProjectsList from '../components/Projects/ProjectsList'
 import AboutPage from '../components/About/AboutPage'
-
+import { graphql } from 'gatsby'
 import $ from 'jquery'
 import Rellax from 'rellax'
-
+import Layout from "../components/Layout"
 
 
 if (typeof window !== 'undefined') {
@@ -80,6 +80,8 @@ export default class MainPage extends Component {
   render() {
     const {data} = this.props;
     return (
+      <Layout>
+
       <div>
         <div className="loader"ref={(loadering) => this.loadering = ReactDOM.findDOMNode(loadering)}>Loading...</div>
         <Link to="/#projects">
@@ -99,76 +101,74 @@ export default class MainPage extends Component {
         <AboutPage image={data.pete} text={data.dataYaml}/>
         
       </div>
+      </Layout>
     )
   }
 }
 
 
 export const query = graphql`
-  query IndexQuery {
-    site{
-      siteMetadata{
-        title
-        desc
-      }
+query IndexQuery {
+  site {
+    siteMetadata {
+      title
+      desc
     }
-    dataYaml {
-      intro
-      address1
-      address2
-      address3
-      clients
-      social1
-      social1name
-      social2
-      social2name
-      social3
-      social3name
-      image
+  }
+  dataYaml {
+    intro
+    address1
+    address2
+    address3
+    clients
+    social1
+    social1name
+    social2
+    social2name
+    social3
+    social3name
+    image
+  }
+  pete: imageSharp(id: {regex: "/pete.jpg/"}) {
+    fluid(maxWidth: 700) {
+      ...GatsbyImageSharpFluid
     }
-    pete: imageSharp(id: {regex: "/pete.jpg/"}) {
-      sizes(maxWidth:1240, maxHeight:1240, quality:95) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-    allMarkdownRemark(sort: {
-      fields:[frontmatter___date],
-      order: DESC
-    }) {
-      edges {
-         next{
-          frontmatter{
-            title
-          }
-          fields{
-            slug
-          }
+  }
+  allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      next {
+        frontmatter {
+          title
         }
-        previous{
-          frontmatter{
-            title
-          }
-          fields{
-            slug
-          }
+        fields {
+          slug
         }
-        node {
-          id
-          frontmatter {
-            title
-            published
-            date(formatString:"DD.MM.YYYY")
-            image
-            videoid
-            client
-          }
-          html
-          excerpt
-          fields{
-            slug
-          }
+      }
+      previous {
+        frontmatter {
+          title
+        }
+        fields {
+          slug
+        }
+      }
+      node {
+        id
+        frontmatter {
+          title
+          published
+          date(formatString: "DD.MM.YYYY")
+          image
+          videoid
+          client
+        }
+        html
+        excerpt
+        fields {
+          slug
         }
       }
     }
   }
+}
 `

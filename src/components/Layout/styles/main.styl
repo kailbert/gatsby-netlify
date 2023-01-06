@@ -44,6 +44,20 @@ loop()
 $black = #000
 $white = #fff
 
+$pathToFonts = "./fonts/"
+
+@font-face 
+	font-family "AkkuratBold"
+	font-style normal
+	font-weight normal
+	src url(./fonts/lineto-akkurat-bold.woff2) format("woff2")
+
+@font-face
+	font-family "AkkuratRegular"
+	font-style normal
+	font-weight normal
+	src  url(./fonts/lineto-akkurat-regular.woff2) format("woff2")
+
 bold()
 	font-family 'AkkuratBold', sans-serif
 	font-weight normal
@@ -51,6 +65,10 @@ bold()
 regular()
 	font-family 'AkkuratRegular', sans-serif
 	font-weight normal
+
+
+
+
 body
 	regular()
 a
